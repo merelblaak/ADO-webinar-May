@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webinar: Migrating from Azure DevOps to GitHub</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2328;
+      --muted: #59636e;
+      --primary: #0969da;
+      --surface: #ffffff;
+      --bg: #f6f8fa;
+      --border: #d0d7de;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 24px 16px 56px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h1,
+    h2 {
+      margin-top: 0;
+      line-height: 1.2;
+    }
+
+    p {
+      margin: 0 0 10px;
+      color: var(--muted);
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    .eyebrow {
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      display: grid;
+      gap: 6px;
+      margin: 16px 0 20px;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    form {
+      display: grid;
+      gap: 12px;
+      margin-top: 14px;
+    }
+
+    label {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    input,
+    select {
+      width: 100%;
+      margin-top: 6px;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font: inherit;
+    }
+
+    button {
+      margin-top: 8px;
+      width: fit-content;
+      padding: 10px 16px;
+      border: 0;
+      border-radius: 8px;
+      background: var(--primary);
+      color: #ffffff;
+      font: inherit;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card">
+      <p class="eyebrow">Live Customer Webinar</p>
+      <h1>Migrating from Azure DevOps to GitHub</h1>
+      <p>Learn how to plan and execute a smooth migration from ADO to GitHub with guidance from migration specialists and customer success experts.</p>
+      <div class="meta">
+        <span><strong>Date:</strong> 28 May 2026</span>
+        <span><strong>Time:</strong> 16:00 CEST / 10:00 ET</span>
+        <span><strong>Duration:</strong> 60 minutes + live Q&amp;A</span>
+      </div>
+      <a class="button" href="#register">Register now</a>
+    </section>
+
+    <section class="card">
+      <h2>What you'll learn</h2>
+      <ul>
+        <li>How to assess your current ADO setup and create a phased migration plan</li>
+        <li>Best practices for moving repos, boards, pipelines, and permissions</li>
+        <li>How GitHub Actions and GitHub Advanced Security can modernize delivery</li>
+        <li>Common migration pitfalls and how to avoid downtime</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Who should attend</h2>
+      <p>Engineering leaders, platform teams, DevOps engineers, and project administrators planning or executing a move from Azure DevOps to GitHub.</p>
+    </section>
+
+    <section class="card" id="register">
+      <h2>Register for the webinar</h2>
+      <p>Complete the form below and we'll send the calendar invite and joining link.</p>
+      <form action="mailto:migrations-webinars@github.com" method="post" enctype="text/plain">
+        <label for="name">Full name
+          <input id="name" name="name" type="text" required />
+        </label>
+
+        <label for="email">Work email
+          <input id="email" name="email" type="email" required />
+        </label>
+
+        <label for="company">Company
+          <input id="company" name="company" type="text" required />
+        </label>
+
+        <label for="role">Role
+          <select id="role" name="role" required>
+            <option value="">Select role</option>
+            <option>Engineering Leadership</option>
+            <option>DevOps / Platform Engineer</option>
+            <option>Project Administrator</option>
+            <option>Developer</option>
+            <option>Other</option>
+          </select>
+        </label>
+
+        <button type="submit">Submit registration</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
