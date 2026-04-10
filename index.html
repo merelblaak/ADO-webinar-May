@@ -117,6 +117,12 @@
       font-weight: 600;
       cursor: pointer;
     }
+
+    #registration-message {
+      margin: 12px 0 0;
+      color: #1a7f37;
+      font-weight: 600;
+    }
   </style>
 </head>
 <body>
@@ -151,7 +157,7 @@
     <section class="card" id="register">
       <h2>Register for the webinar</h2>
       <p>Complete the form below and we'll send the calendar invite and joining link.</p>
-      <form action="mailto:migrations-webinars@github.com" method="post" enctype="text/plain">
+      <form id="registration-form">
         <label for="name">Full name
           <input id="name" name="name" type="text" required />
         </label>
@@ -177,7 +183,18 @@
 
         <button type="submit">Submit registration</button>
       </form>
+      <p id="registration-message" role="status" aria-live="polite"></p>
     </section>
   </main>
+  <script>
+    const form = document.getElementById("registration-form");
+    const message = document.getElementById("registration-message");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      message.textContent = "Thanks for registering! We'll email your webinar invite shortly.";
+      form.reset();
+    });
+  </script>
 </body>
 </html>
